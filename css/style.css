@@ -464,6 +464,8 @@ input:not([type=submit]):not([type=file]):focus, select:focus, textarea:focus {
 }
 .header .top a {
 	color: #fff;
+    font-family: monospace;
+
 }
 .header .top a:hover {
 	opacity: .75;
@@ -920,7 +922,7 @@ input:not([type=submit]):not([type=file]):focus, select:focus, textarea:focus {
 	padding-bottom: 72px;
 }
 .section-img {
-	height: 750px;
+	height: 650px;
 	margin: 0 auto;
     margin-bottom: 20px;
 }

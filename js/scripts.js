@@ -252,10 +252,20 @@
 		$('.portfolio-slider').owlCarousel({
 			items: 1,
 			autoplay: true,
+			autoplayHoverPause: true,
+			autoplayTimeout: 500,
 			loop: true,
 			nav: true,
 			navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
 			dots: false
+		});
+
+		$('.portfolio-slider').on('mouseover', function (e) {
+			$('.portfolio-slider').owlCarousel.trigger('stop.owl.autoplay');			
+		});
+
+		$('.portfolio-slider').on('mouseleave', function (e) {
+			$('.portfolio-slider').owlCarousel.trigger('play.owl.autoplay');			
 		});
 
 	});
